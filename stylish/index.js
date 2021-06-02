@@ -16,7 +16,7 @@ module.exports = {
     'rest-spread-spacing': 'error',
     'template-curly-spacing': 'error',
     'wrap-iife': ['error', 'any'],
-    'yoda': 'error',
+    yoda: 'error',
     'yield-star-spacing': ['error', 'after'],
   },
 }

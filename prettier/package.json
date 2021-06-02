@@ -1,0 +1,19 @@
+{
+  "name": "@masterworks/prettier-config",
+  "version": "1.0.0",
+  "description": "ESLint configurations for Masterworks — the recommended Prettier config to go along",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MasterworksIO/eslint-config-masterworks.git"
+  },
+  "author": "Stefan Maric <me@stefanmaric.com> (https://www.stefanmaric.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MasterworksIO/eslint-config-masterworks/issues"
+  },
+  "homepage": "https://github.com/MasterworksIO/eslint-config-masterworks/tree/master/prettier",
+  "peerDependencies": {
+    "eslint": "^7.27.0"
+  }
+}
