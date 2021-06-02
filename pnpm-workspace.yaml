@@ -1,0 +1,11 @@
+packages:
+  - 'base/'
+  - 'jsx-stylish/'
+  - 'jsx/'
+  - 'modern/'
+  - 'modules/'
+  - 'node/'
+  - 'react/'
+  - 'stylish/'
+  - 'typescript/'
+  - 'typescript-strict/'

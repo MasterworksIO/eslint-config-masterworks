@@ -1,0 +1,21 @@
+{
+  "name": "@masterworks/eslint-config-masterworks-jsx",
+  "version": "1.0.0",
+  "description": "ESLint configurations for Masterworks — JSX and a11y",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MasterworksIO/eslint-config-masterworks.git"
+  },
+  "author": "Stefan Maric <me@stefanmaric.com> (https://www.stefanmaric.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MasterworksIO/eslint-config-masterworks/issues"
+  },
+  "homepage": "https://github.com/MasterworksIO/eslint-config-masterworks/tree/master/jsx",
+  "peerDependencies": {
+    "eslint": "^7.27.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0"
+  }
+}

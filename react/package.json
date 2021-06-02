@@ -1,0 +1,21 @@
+{
+  "name": "@masterworks/eslint-config-masterworks-react",
+  "version": "1.0.0",
+  "description": "ESLint configurations for Masterworks — React specifics",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MasterworksIO/eslint-config-masterworks.git"
+  },
+  "author": "Stefan Maric <me@stefanmaric.com> (https://www.stefanmaric.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MasterworksIO/eslint-config-masterworks/issues"
+  },
+  "homepage": "https://github.com/MasterworksIO/eslint-config-masterworks/tree/master/react",
+  "peerDependencies": {
+    "eslint": "^7.27.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0"
+  }
+}

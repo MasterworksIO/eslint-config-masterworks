@@ -1,0 +1,27 @@
+module.exports = {
+  env: {
+    es2020: true,
+  },
+  rules: {
+    'class-methods-use-this': 'error',
+    'default-param-last': 'error',
+    'no-constructor-return': 'error',
+    'no-implicit-globals': 'off',
+    'no-loop-func': 'error',
+    'no-return-await': 'error',
+    'no-template-curly-in-string': 'error',
+    'no-unused-vars': ['error', { ignoreRestSiblings: true }],
+    'no-useless-computed-key': 'error',
+    'no-useless-constructor': 'error',
+    'no-var': 'error',
+    'object-shorthand': ['error', 'always', { avoidQuotes: true }],
+    'prefer-numeric-literals': 'error',
+    'prefer-promise-reject-errors': 'error',
+    'prefer-rest-params': 'error',
+    'prefer-spread': 'error',
+    'prefer-spread': 'error',
+    'prefer-template': 'error',
+    'require-await': 'error',
+    'symbol-description': 'error',
+  },
+}

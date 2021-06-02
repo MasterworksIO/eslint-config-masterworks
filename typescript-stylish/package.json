@@ -1,0 +1,20 @@
+{
+  "name": "@masterworks/eslint-config-masterworks-typescript-stylish",
+  "version": "1.0.0",
+  "description": "ESLint configurations for Masterworks — stylish preferences",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MasterworksIO/eslint-config-masterworks.git"
+  },
+  "author": "Stefan Maric <me@stefanmaric.com> (https://www.stefanmaric.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MasterworksIO/eslint-config-masterworks/issues"
+  },
+  "homepage": "https://github.com/MasterworksIO/eslint-config-masterworks/tree/master/typescript-stylish",
+  "peerDependencies": {
+    "eslint": "^7.27.0",
+    "@masterworks/eslint-config-masterworks-typescript": "^1.0.0"
+  }
+}

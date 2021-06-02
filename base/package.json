@@ -1,0 +1,19 @@
+{
+  "name": "@masterworks/eslint-config-masterworks-base",
+  "version": "1.0.0",
+  "description": "ESLint configurations for Masterworks — the base config",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MasterworksIO/eslint-config-masterworks.git"
+  },
+  "author": "Stefan Maric <me@stefanmaric.com> (https://www.stefanmaric.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MasterworksIO/eslint-config-masterworks/issues"
+  },
+  "homepage": "https://github.com/MasterworksIO/eslint-config-masterworks/tree/master/base",
+  "peerDependencies": {
+    "eslint": "^7.27.0"
+  }
+}

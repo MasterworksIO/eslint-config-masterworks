@@ -1,0 +1,19 @@
+{
+  "name": "@masterworks/eslint-config-masterworks-modern",
+  "version": "1.0.0",
+  "description": "ESLint configurations for Masterworks — ES6 to infinity",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MasterworksIO/eslint-config-masterworks.git"
+  },
+  "author": "Stefan Maric <me@stefanmaric.com> (https://www.stefanmaric.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MasterworksIO/eslint-config-masterworks/issues"
+  },
+  "homepage": "https://github.com/MasterworksIO/eslint-config-masterworks/tree/master/modern",
+  "peerDependencies": {
+    "eslint": "^7.27.0"
+  }
+}
