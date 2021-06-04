@@ -40,7 +40,7 @@ module.exports = {
     'no-useless-call': 'error',
     'no-useless-concat': 'error',
     'no-useless-return': 'error',
-    'no-void': 'error',
+    'no-void': ['error', { allowAsStatement: true }],
     radix: 'error',
     'vars-on-top': 'error',
   },
