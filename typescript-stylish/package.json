@@ -1,7 +1,7 @@
 {
   "name": "@masterworks/eslint-config-masterworks-typescript-stylish",
   "version": "1.0.0",
-  "description": "ESLint configurations for Masterworks — stylish preferences",
+  "description": "ESLint config presets for Masterworks — stylish preferences",
   "main": "index.js",
   "repository": {
     "type": "git",

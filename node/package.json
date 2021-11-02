@@ -1,7 +1,7 @@
 {
   "name": "@masterworks/eslint-config-masterworks-node",
   "version": "1.0.0",
-  "description": "ESLint configurations for Masterworks — rules for NodeJS",
+  "description": "ESLint config presets for Masterworks — rules for NodeJS",
   "main": "index.js",
   "repository": {
     "type": "git",

@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-masterworks",
   "version": "1.0.0",
-  "description": "ESLint configurations for Masterworks",
+  "description": "ESLint config presets for Masterworks",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MasterworksIO/eslint-config-masterworks.git"

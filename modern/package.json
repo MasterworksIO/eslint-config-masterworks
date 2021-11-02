@@ -1,7 +1,7 @@
 {
   "name": "@masterworks/eslint-config-masterworks-modern",
   "version": "1.0.0",
-  "description": "ESLint configurations for Masterworks — ES6 to infinity",
+  "description": "ESLint config presets for Masterworks — ES6 to infinity",
   "main": "index.js",
   "repository": {
     "type": "git",

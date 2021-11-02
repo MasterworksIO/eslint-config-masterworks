@@ -1,7 +1,7 @@
 {
   "name": "@masterworks/eslint-config-masterworks-typescript",
   "version": "1.0.0",
-  "description": "ESLint configurations for Masterworks — Base for TypeScript",
+  "description": "ESLint config presets for Masterworks — Base for TypeScript",
   "main": "index.js",
   "repository": {
     "type": "git",

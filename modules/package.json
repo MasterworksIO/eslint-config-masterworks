@@ -1,7 +1,7 @@
 {
   "name": "@masterworks/eslint-config-masterworks-modules",
   "version": "1.0.0",
-  "description": "ESLint configurations for Masterworks — ES modules",
+  "description": "ESLint config presets for Masterworks — ES modules",
   "main": "index.js",
   "repository": {
     "type": "git",

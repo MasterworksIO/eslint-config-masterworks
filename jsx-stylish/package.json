@@ -1,7 +1,7 @@
 {
   "name": "@masterworks/eslint-config-masterworks-jsx-stylish",
   "version": "1.0.0",
-  "description": "ESLint configurations for Masterworks — stylish JSX",
+  "description": "ESLint config presets for Masterworks — stylish JSX",
   "main": "index.js",
   "repository": {
     "type": "git",

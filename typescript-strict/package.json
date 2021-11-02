@@ -1,7 +1,7 @@
 {
   "name": "@masterworks/eslint-config-masterworks-typescript-strict",
   "version": "1.0.0",
-  "description": "ESLint configurations for Masterworks — TypeScript in strict mode",
+  "description": "ESLint config presets for Masterworks — TypeScript in strict mode",
   "main": "index.js",
   "repository": {
     "type": "git",

@@ -1,7 +1,7 @@
 {
   "name": "@masterworks/eslint-config-masterworks-react",
   "version": "1.0.0",
-  "description": "ESLint configurations for Masterworks — React specifics",
+  "description": "ESLint config presets for Masterworks — React specifics",
   "main": "index.js",
   "repository": {
     "type": "git",

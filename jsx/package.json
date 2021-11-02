@@ -1,7 +1,7 @@
 {
   "name": "@masterworks/eslint-config-masterworks-jsx",
   "version": "1.0.0",
-  "description": "ESLint configurations for Masterworks — JSX and a11y",
+  "description": "ESLint config presets for Masterworks — JSX and a11y",
   "main": "index.js",
   "repository": {
     "type": "git",
