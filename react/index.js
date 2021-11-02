@@ -5,7 +5,6 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react/button-has-type': 'error',
     'react/default-props-match-prop-types': 'error',
-    'react/destructuring-assignment': 'error',
     'react/forbid-foreign-prop-types': 'error',
     'react/jsx-uses-react': 'error',
     'react/no-access-state-in-setstate': 'error',
