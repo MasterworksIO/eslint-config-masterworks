@@ -4,7 +4,6 @@ module.exports = {
     '@typescript-eslint/consistent-indexed-object-style': ['error', 'record'],
     '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
     '@typescript-eslint/member-ordering': ['warn'],
-    '@typescript-eslint/no-extra-parens': ['error'],
     '@typescript-eslint/prefer-as-const': ['error'],
     '@typescript-eslint/prefer-for-of': ['error'],
     '@typescript-eslint/prefer-includes': ['error'],
