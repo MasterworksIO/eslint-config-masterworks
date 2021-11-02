@@ -24,7 +24,6 @@ module.exports = {
     'react/no-unknown-property': 'error',
     'react/no-unused-prop-types': 'error',
     'react/no-unused-state': 'error',
-    'react/no-unused-state': 'error',
     'react/no-will-update-set-state': 'error',
     'react/prefer-es6-class': 'error',
     'react/prefer-stateless-function': 'error',
