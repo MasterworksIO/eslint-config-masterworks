@@ -14,6 +14,6 @@
   },
   "homepage": "https://github.com/MasterworksIO/eslint-config-masterworks/tree/master/modern",
   "peerDependencies": {
-    "eslint": "^7.27.0"
+    "eslint": "^8.3.0"
   }
 }

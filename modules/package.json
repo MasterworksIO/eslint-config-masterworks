@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/MasterworksIO/eslint-config-masterworks/tree/master/modules",
   "peerDependencies": {
-    "eslint": "^7.27.0",
+    "eslint": "^8.3.0",
     "eslint-plugin-import": "^2.19.1"
   }
 }

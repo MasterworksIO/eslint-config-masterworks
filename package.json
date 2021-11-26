@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-masterworks",
+  "name": "@masterworks/eslint-config-masterworks",
   "version": "1.0.0",
   "description": "ESLint config presets for Masterworks",
   "repository": {
@@ -19,6 +19,6 @@
     "version": "pnpm recursive exec -- npm version --no-git-tag-version"
   },
   "devDependencies": {
-    "prettier": "^2.3.0"
+    "prettier": "^2.5.0"
   }
 }

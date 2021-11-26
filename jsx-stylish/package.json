@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/MasterworksIO/eslint-config-masterworks/tree/master/jsx-stylish",
   "peerDependencies": {
-    "eslint": "^7.27.0",
-    "@masterworks/eslint-config-masterworks-jsx": "^1.0.0"
+    "@masterworks/eslint-config-masterworks-jsx": "^1.0.0",
+    "eslint": "^8.3.0"
   }
 }
