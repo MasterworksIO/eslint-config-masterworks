@@ -81,7 +81,7 @@ Each preset has a target use-case and reasoning behind. Read each presets' READM
 
 * [`@masterworks/eslint-config-masterworks/node`](./node/README.md)
 
-  Use for services or scripts that run inside Node.JS
+  Use for services or scripts that run inside Node.js
 
 * [`@masterworks/eslint-config-masterworks/react`](./react/README.md)
 
@@ -91,11 +91,11 @@ Each preset has a target use-case and reasoning behind. Read each presets' READM
 
   Rules specific to JSX, not strictly necessary in relation to React.
 
-* [`@masterworks/eslint-config-masterworks/typescript`](./jsx/README.md)
+* [`@masterworks/eslint-config-masterworks/typescript`](./typescript/README.md)
 
-  Base TypeScript rules. Overrides some of `eslint:recommended` that are incompatible with TypeScript.
+  Base TypeScript rules. Replaces some of `@masterworks/eslint-config-masterworks/base` rules that are incompatible with TypeScript.
 
-* [`@masterworks/eslint-config-masterworks/typescript-strict`](./jsx/README.md)
+* [`@masterworks/eslint-config-masterworks/typescript-strict`](./typescript-strict/README.md)
 
   To accompany `strict: true` in your tsconfig.json.
 
@@ -104,7 +104,7 @@ There are also very opinionated presents regarding to coding style ending in `-s
 
 
 * [`@masterworks/eslint-config-masterworks/jsx-stylish`](./jsx-stylish/README.md)
-* [`@masterworks/eslint-config-masterworks/typescript-stylish`](./jsx-stylish/README.md)
+* [`@masterworks/eslint-config-masterworks/typescript-stylish`](./typescript-stylish/README.md)
 
 
 ## Prettier
