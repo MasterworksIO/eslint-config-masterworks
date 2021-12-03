@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Update docs about ditching prop-types when working with TS
+
 ## 2.0.0 - 2021-11-29
 
 - Add documentation for individual presets and fix some broken links

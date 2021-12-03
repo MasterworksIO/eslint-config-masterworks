@@ -38,7 +38,9 @@ To opt-out of PropTypes validation for TypeScript components, disable the `react
         "@masterworks/eslint-config-masterworks/typescript-stylish"
       ],
       "rules": {
-        "react/prop-types": "off"
+        "react/default-props-match-prop-types": "off",
+        "react/prop-types": "off",
+        "react/require-default-props": "off"
       }
     }
   ]
