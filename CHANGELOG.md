@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Update docs about ditching prop-types when working with TS
+- Don't error on missing return type for function expressions
 
 ## 2.0.0 - 2021-11-29
 
