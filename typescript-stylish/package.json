@@ -1,6 +1,6 @@
 {
   "name": "@masterworks/eslint-config-masterworks-typescript-stylish",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "ESLint config presets for Masterworks — stylish preferences",
   "main": "index.js",
   "repository": {
@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/MasterworksIO/eslint-config-masterworks/tree/master/typescript-stylish",
   "peerDependencies": {
-    "@masterworks/eslint-config-masterworks-typescript": "^2.0.0",
+    "@masterworks/eslint-config-masterworks-typescript": "^2.1.0",
     "eslint": "^8.3.0",
     "typescript": "^4.1.2"
   }

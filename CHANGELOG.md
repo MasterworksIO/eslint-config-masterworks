@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 2.1.0 - 2021-12-22
+
 - Update docs about ditching prop-types when working with TS
 - Don't error on missing return type for function expressions
 
