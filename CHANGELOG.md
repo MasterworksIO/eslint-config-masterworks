@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Fix pnpm install failing because of our publish script
+
 ## 2.1.0 - 2021-12-22
 
 - Update docs about ditching prop-types when working with TS

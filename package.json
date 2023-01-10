@@ -15,7 +15,6 @@
   "license": "MIT",
   "prettier": "./prettier",
   "scripts": {
-    "publish": "pnpm recursive --filter '@masterworks/*' exec --workspace-concurrency 1 -- pnpm publish --access public",
     "version": "pnpm recursive exec -- npm version --no-git-tag-version"
   },
   "devDependencies": {
