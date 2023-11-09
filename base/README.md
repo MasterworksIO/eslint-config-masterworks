@@ -4,16 +4,16 @@ You should always include it as the base for the other presets. It is basically 
 
 ## Peer dependencies
 
-This preset only relies on `eslint` itself.
+This preset relies on `eslint` and `eslint-plugin-import`.
 
 ```shell
-npm install --save-dev eslint
+npm install --save-dev eslint eslint-plugin-import
 ```
 
 ```shell
-yarn add --dev eslint
+yarn add --dev eslint eslint-plugin-import
 ```
 
 ```shell
-pnpm install --save-dev eslint
+pnpm add --save-dev eslint eslint-plugin-import
 ```

@@ -4,8 +4,28 @@ module.exports = {
     'arrow-parens': ['error', 'always'],
     'arrow-spacing': 'error',
     'block-spacing': 'error',
+    'camelcase': [
+      'error',
+      { ignoreDestructuring: true, ignoreImports: true, ignoreGlobals: true, properties: 'never' },
+    ],
+    'capitalized-comments': [
+      'error',
+      'always',
+      { ignoreConsecutiveComments: true, ignoreInlineComments: true },
+    ],
     'dot-location': ['error', 'property'],
     'dot-notation': 'error',
+    'import/order': [
+      'warn',
+      {
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: true,
+        },
+        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object'],
+        'newlines-between': 'always',
+      },
+    ],
     'no-else-return': 'error',
     'no-extra-bind': 'error',
     'no-extra-label': 'error',
@@ -16,7 +36,7 @@ module.exports = {
     'rest-spread-spacing': 'error',
     'template-curly-spacing': 'error',
     'wrap-iife': ['error', 'any'],
-    yoda: 'error',
     'yield-star-spacing': ['error', 'after'],
+    'yoda': 'error',
   },
 }

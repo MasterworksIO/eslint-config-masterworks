@@ -31,18 +31,18 @@ Depending on the project, you might be using [`npm`](https://docs.npmjs.com/abou
 
 If you don't see any of those, or if you see more than one, consult with your team.
 
-As a minimum, you are going to need to install `eslint` and `eslint-config-masterworks` as dev-dependencies. Based on your project's package manager:
+As a minimum, you are going to need to install `eslint`, `eslint-plugin-import`, and `eslint-config-masterworks` as dev-dependencies. Based on your project's package manager:
 
 ```shell
-$ npm install --save-dev eslint @masterworks/eslint-config-masterworks@github:MasterworksIO/eslint-config-masterworks#2.1.1
+$ npm install --save-dev eslint eslint-plugin-import @masterworks/eslint-config-masterworks@github:MasterworksIO/eslint-config-masterworks#2.1.1
 ```
 
 ```shell
-$ yarn install --save-dev eslint @masterworks/eslint-config-masterworks@github:MasterworksIO/eslint-config-masterworks#2.1.1
+$ yarn install --save-dev eslint eslint-plugin-import @masterworks/eslint-config-masterworks@github:MasterworksIO/eslint-config-masterworks#2.1.1
 ```
 
 ```shell
-$ pnpm install --save-dev eslint @masterworks/eslint-config-masterworks@github:MasterworksIO/eslint-config-masterworks#2.1.1
+$ pnpm install --save-dev eslint eslint-plugin-import @masterworks/eslint-config-masterworks@github:MasterworksIO/eslint-config-masterworks#2.1.1
 ```
 
 Then create an `.eslintrc.json` (or any other of the [formats supported by ESLint](https://eslint.org/docs/user-guide/configuring/configuration-files#configuration-file-formats)) if it doesn't exist already, and extend the [`base` preset](./base/):
@@ -71,14 +71,6 @@ Each preset has a target use-case and reasoning behind. Read each presets' READM
 
   You should always include it as the base for the other presets. It is basically the [`eslint:recommended` preset](https://eslint.org/docs/rules/) with some extra few rules enabled.
 
-* [`@masterworks/eslint-config-masterworks/modern`](./modern/README.md)
-
-  If your runtime is modern, or if your source-code is going to be trans-piled anyway.
-
-* [`@masterworks/eslint-config-masterworks/modules`](./modules/README.md)
-
-  To check for correct usage of ES Modules and missing files or exports.
-
 * [`@masterworks/eslint-config-masterworks/node`](./node/README.md)
 
   Use for services or scripts that run inside Node.js
@@ -87,9 +79,9 @@ Each preset has a target use-case and reasoning behind. Read each presets' READM
 
   React-specific rules, including rules of hooks.
 
-* [`@masterworks/eslint-config-masterworks/jsx`](./jsx/README.md)
+* [`@masterworks/eslint-config-masterworks/react-web`](./react-web/README.md)
 
-  Rules specific to JSX, not strictly necessary in relation to React.
+  Adds JSX accessibility best-practices on top of the `react` preset. Include in web projects only.
 
 * [`@masterworks/eslint-config-masterworks/typescript`](./typescript/README.md)
 
@@ -100,10 +92,11 @@ Each preset has a target use-case and reasoning behind. Read each presets' READM
   To accompany `strict: true` in your tsconfig.json.
 
 
-There are also very opinionated presents regarding to coding style ending in `-stylish`. All errors pointed out by these presets can be automatically fixed with [`eslint --fix`](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) but are still kept separated to distinguish aesthetics from function.
+There are also very opinionated presents regarding to coding style ending in `-stylish`. Most errors/warnings pointed out by these presets can be automatically fixed with [`eslint --fix`](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) but are still kept separated to distinguish aesthetics from function.
 
 
-* [`@masterworks/eslint-config-masterworks/jsx-stylish`](./jsx-stylish/README.md)
+* [`@masterworks/eslint-config-masterworks/stylish`](./stylish/README.md)
+* [`@masterworks/eslint-config-masterworks/react-stylish`](./react-stylish/README.md)
 * [`@masterworks/eslint-config-masterworks/typescript-stylish`](./typescript-stylish/README.md)
 
 

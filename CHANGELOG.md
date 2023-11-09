@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Upgrade all dependencies and modernize presets
+
 ## 2.1.1 - 2022-01-10
 
 - Fix pnpm install failing because of our publish script

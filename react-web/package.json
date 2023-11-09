@@ -1,7 +1,7 @@
 {
-  "name": "@masterworks/eslint-config-masterworks-jsx",
+  "name": "@masterworks/eslint-config-masterworks-react-web",
   "version": "2.1.1",
-  "description": "ESLint config presets for Masterworks — JSX and a11y",
+  "description": "ESLint config presets for Masterworks — React on the Web",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -12,10 +12,8 @@
   "bugs": {
     "url": "https://github.com/MasterworksIO/eslint-config-masterworks/issues"
   },
-  "homepage": "https://github.com/MasterworksIO/eslint-config-masterworks/tree/master/jsx",
+  "homepage": "https://github.com/MasterworksIO/eslint-config-masterworks/tree/master/react-web",
   "peerDependencies": {
-    "eslint": "^8.3.0",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.24.0"
+    "@masterworks/eslint-config-masterworks-react": "^2.1.1"
   }
 }

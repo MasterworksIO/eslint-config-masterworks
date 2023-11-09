@@ -2,8 +2,6 @@
 
 React-specific rules, including rules of hooks.
 
-Use alongside [`@masterworks/eslint-config-masterworks/jsx`](../jsx/README.md) for React frontend projects.
-
 ## React version
 
 This preset requires you to set the project's React version on the `settings` field of the [eslint config file](https://eslint.org/docs/user-guide/configuring/configuration-files).

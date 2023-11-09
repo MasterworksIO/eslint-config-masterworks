@@ -14,8 +14,9 @@
   },
   "homepage": "https://github.com/MasterworksIO/eslint-config-masterworks/tree/master/react",
   "peerDependencies": {
-    "eslint": "^8.3.0",
-    "eslint-plugin-react": "^7.24.0",
-    "eslint-plugin-react-hooks": "^4.2.0"
+    "eslint": "^8.53.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react": "^7.33.2"
   }
 }

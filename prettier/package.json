@@ -2,7 +2,14 @@
   "name": "@masterworks/prettier-config",
   "version": "2.1.1",
   "description": "ESLint config presets for Masterworks — the recommended Prettier config to go along",
-  "main": "index.js",
+  "main": "prettier.cjs",
+  "module": "prettier.mjs",
+  "exports": {
+    ".": {
+      "import": "./prettier.mjs",
+      "require": "./prettier.cjs"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MasterworksIO/eslint-config-masterworks.git"
@@ -14,7 +21,6 @@
   },
   "homepage": "https://github.com/MasterworksIO/eslint-config-masterworks/tree/master/prettier",
   "peerDependencies": {
-    "eslint": "^8.3.0",
-    "prettier": "^2.0.5"
+    "prettier": "^3.0.3"
   }
 }

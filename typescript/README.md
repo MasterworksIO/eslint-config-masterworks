@@ -44,4 +44,4 @@ yarn add --dev eslint typescript @typescript-eslint/eslint-plugin @typescript-es
 pnpm install --save-dev eslint typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
-This preset also assumes [`@masterworks/eslint-config-masterworks/modules`](../modules/README.md) has been extended already and its peer dependencies are installed as well.
+This preset also assumes [`@masterworks/eslint-config-masterworks/base`](../base/README.md) has been extended already and its peer dependencies are installed as well.
