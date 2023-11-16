@@ -34,15 +34,15 @@ If you don't see any of those, or if you see more than one, consult with your te
 As a minimum, you are going to need to install `eslint`, `eslint-plugin-import`, and `eslint-config-masterworks` as dev-dependencies. Based on your project's package manager:
 
 ```shell
-$ npm install --save-dev eslint eslint-plugin-import @masterworks/eslint-config-masterworks@github:MasterworksIO/eslint-config-masterworks#2.1.1
+$ npm install --save-dev eslint eslint-plugin-import @masterworks/eslint-config-masterworks@github:MasterworksIO/eslint-config-masterworks#3.0.0
 ```
 
 ```shell
-$ yarn install --save-dev eslint eslint-plugin-import @masterworks/eslint-config-masterworks@github:MasterworksIO/eslint-config-masterworks#2.1.1
+$ yarn install --save-dev eslint eslint-plugin-import @masterworks/eslint-config-masterworks@github:MasterworksIO/eslint-config-masterworks#3.0.0
 ```
 
 ```shell
-$ pnpm install --save-dev eslint eslint-plugin-import @masterworks/eslint-config-masterworks@github:MasterworksIO/eslint-config-masterworks#2.1.1
+$ pnpm install --save-dev eslint eslint-plugin-import @masterworks/eslint-config-masterworks@github:MasterworksIO/eslint-config-masterworks#3.0.0
 ```
 
 Then create an `.eslintrc.json` (or any other of the [formats supported by ESLint](https://eslint.org/docs/user-guide/configuring/configuration-files#configuration-file-formats)) if it doesn't exist already, and extend the [`base` preset](./base/):
@@ -111,7 +111,7 @@ When using `@masterworks/eslint-config-masterworks` presets, you should also use
   "name": "my-project",
   "prettier": "@masterworks/eslint-config-masterworks/prettier",
   "devDependencies": {
-    "@masterworks/eslint-config-masterworks": "github:MasterworksIO/eslint-config-masterworks#2.1.1",
+    "@masterworks/eslint-config-masterworks": "github:MasterworksIO/eslint-config-masterworks#3.0.0",
   }
 }
 ```

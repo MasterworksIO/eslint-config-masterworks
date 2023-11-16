@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+
+## 3.0.0 - 2023-11-16
+
 - Upgrade all dependencies and modernize presets
 
 ## 2.1.1 - 2022-01-10

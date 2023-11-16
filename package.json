@@ -1,6 +1,6 @@
 {
   "name": "@masterworks/eslint-config-masterworks",
-  "version": "2.1.1",
+  "version": "3.0.0",
   "description": "ESLint config presets for Masterworks",
   "packageManager": "pnpm@8.9.2",
   "repository": {

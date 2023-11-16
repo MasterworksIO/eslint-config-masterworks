@@ -1,6 +1,6 @@
 {
   "name": "@masterworks/prettier-config",
-  "version": "2.1.1",
+  "version": "3.0.0",
   "description": "ESLint config presets for Masterworks — the recommended Prettier config to go along",
   "main": "prettier.cjs",
   "module": "prettier.mjs",
