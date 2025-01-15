@@ -3,6 +3,7 @@
   "version": "3.0.0",
   "description": "ESLint config presets for Masterworks — stylish preferences",
   "main": "index.js",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MasterworksIO/eslint-config-masterworks.git"
@@ -14,6 +15,6 @@
   },
   "homepage": "https://github.com/MasterworksIO/eslint-config-masterworks/tree/master/stylish",
   "peerDependencies": {
-    "eslint": "^8.53.0"
+    "@stylistic/eslint-plugin": "^3.0.1"
   }
 }

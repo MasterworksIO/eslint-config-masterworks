@@ -1,8 +1,15 @@
-module.exports = {
+export const apply = ({
+  files = ['**/*.ts', '**/*.mts', '**/*.cts', '**/*.tsx'],
+  ignores = [],
+  rules = {},
+} = {}) => ({
+  name: '@masterworks/eslint-config-masterworks-typescript-stylish',
+  files,
+  ignores,
   rules: {
     '@typescript-eslint/consistent-generic-constructors': 'error',
-    '@typescript-eslint/consistent-type-assertions': 'error',
     '@typescript-eslint/consistent-indexed-object-style': ['error', 'record'],
+    '@typescript-eslint/consistent-type-assertions': 'error',
     '@typescript-eslint/consistent-type-exports': 'error',
     '@typescript-eslint/consistent-type-imports': [
       'error',
@@ -32,7 +39,10 @@ module.exports = {
     '@typescript-eslint/prefer-string-starts-ends-with': 'error',
     '@typescript-eslint/sort-type-constituents': 'error',
     '@typescript-eslint/unified-signatures': 'error',
-    // Disable conflicting rules
-    'import/consistent-type-specifier-style': 'off'
+    // Disable cumbersome rules.
+    '@typescript-eslint/no-unnecessary-type-parameters': 'off',
+    // Disable conflicting rules.
+    'import/consistent-type-specifier-style': 'off',
+    ...rules,
   },
-}
+})

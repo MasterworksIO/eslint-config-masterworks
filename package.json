@@ -2,7 +2,11 @@
   "name": "@masterworks/eslint-config-masterworks",
   "version": "3.0.0",
   "description": "ESLint config presets for Masterworks",
-  "packageManager": "pnpm@8.9.2",
+  "engines": {
+    "node": "^20.9.0 || ^22.11.0 || ^23.0.0"
+  },
+  "packageManager": "pnpm@9.15.4",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MasterworksIO/eslint-config-masterworks.git"
@@ -14,11 +18,15 @@
   },
   "author": "Stefan Maric <me@stefanmaric.com> (https://www.stefanmaric.com)",
   "license": "MIT",
-  "prettier": "./prettier/prettier.cjs",
+  "prettier": "./prettier/prettier.js",
   "scripts": {
+    "lint": "eslint",
     "version": "pnpm recursive exec -- npm version --no-git-tag-version"
   },
   "devDependencies": {
-    "prettier": "^3.0.3"
+    "@types/node": "22.13.1",
+    "eslint": "9.19.0",
+    "prettier": "3.4.2",
+    "typescript": "5.7.3"
   }
 }

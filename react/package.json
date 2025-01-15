@@ -3,6 +3,7 @@
   "version": "3.0.0",
   "description": "ESLint config presets for Masterworks — React specifics",
   "main": "index.js",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MasterworksIO/eslint-config-masterworks.git"
@@ -14,9 +15,7 @@
   },
   "homepage": "https://github.com/MasterworksIO/eslint-config-masterworks/tree/master/react",
   "peerDependencies": {
-    "eslint": "^8.53.0",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react": "^7.33.2"
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react": "^7.37.4"
   }
 }

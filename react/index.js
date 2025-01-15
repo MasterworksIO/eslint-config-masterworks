@@ -1,16 +1,27 @@
-module.exports = {
-  plugins: ['eslint-plugin-react', 'eslint-plugin-react-hooks'],
-  extends: [
-    'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
-    'plugin:react-hooks/recommended',
-  ],
+import react from 'eslint-plugin-react'
+import reactHooks from 'eslint-plugin-react-hooks'
+
+export const apply = ({ files = ['**/*.jsx', '**/*.tsx'], ignores = [], rules = {} } = {}) => ({
+  name: '@masterworks/eslint-config-masterworks-react',
+  files,
+  ignores,
+  plugins: {
+    react: react.configs.flat.recommended.plugins.react,
+    'react-hooks': reactHooks,
+  },
+  languageOptions: react.configs.flat['jsx-runtime'].languageOptions,
   rules: {
+    ...react.configs.flat.recommended.rules,
+    // Use modern JSX runtime
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-uses-react': 'off',
+    // Rules of hooks
     'react-hooks/exhaustive-deps': 'error',
     'react-hooks/rules-of-hooks': 'error',
+    // Warn on deprecated APIs
+    'react/no-deprecated': 'warn',
+    // Rest of the rules
     'react/button-has-type': 'error',
-    'react/default-props-match-prop-types': 'error',
-    'react/forbid-foreign-prop-types': 'error',
     'react/jsx-key': ['error', { checkFragmentShorthand: true }],
     'react/jsx-no-bind': ['error', { allowArrowFunctions: true }],
     'react/no-access-state-in-setstate': 'error',
@@ -40,10 +51,15 @@ module.exports = {
     'react/no-will-update-set-state': 'error',
     'react/prefer-es6-class': 'error',
     'react/prefer-stateless-function': 'error',
-    'react/prop-types': 'error',
-    'react/require-default-props': 'error',
     'react/self-closing-comp': 'error',
     'react/style-prop-object': 'error',
     'react/void-dom-elements-no-children': 'error',
+    // PropTypes are discouraged in favor of TypeScript by the React Core Team,
+    // let's disable them by default.
+    'react/default-props-match-prop-types': 'off',
+    'react/forbid-foreign-prop-types': 'off',
+    'react/prop-types': 'off',
+    // User's rules
+    ...rules,
   },
-}
+})

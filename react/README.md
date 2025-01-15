@@ -2,60 +2,76 @@
 
 React-specific rules, including rules of hooks.
 
-## React version
-
-This preset requires you to set the project's React version on the `settings` field of the [eslint config file](https://eslint.org/docs/user-guide/configuring/configuration-files).
-
-```json
-{
-  [...]
-  "settings": {
-    "react": {
-      "version": "18"
-    }
-  }
-  [...]
-}
-```
-
-## Using TypeScript
-
-When using TSX, you probably want to renounce to PropType validations as TypeScript's type system is better in many ways (except it cannot catch type errors at runtime, useful for cases where the consumer of your component is not typed) and it is a lot of extra effort to keep both type validations in sync.
-
-To opt-out of PropTypes validation for TypeScript components, disable the `react/prop-types` rule on the override for TSX files, for example:
-
-```json
-{
-  [...]
-  "overrides": [
-    {
-      "files": ["*.ts", "*.tsx", "*.d.ts"],
-      "extends": [
-        "@masterworks/eslint-config-masterworks/typescript",
-        "@masterworks/eslint-config-masterworks/typescript-strict",
-        "@masterworks/eslint-config-masterworks/typescript-stylish"
-      ],
-      "rules": {
-        "react/default-props-match-prop-types": "off",
-        "react/prop-types": "off",
-        "react/require-default-props": "off"
-      }
-    }
-  ]
-  [...]
-}
-```
-
 ## Peer dependencies
 
+Make sure to install these peer-dependencies:
+
 ```shell
-npm install --save-dev eslint eslint-plugin-react eslint-plugin-react-hooks
+npm install --save-dev eslint-plugin-react eslint-plugin-react-hooks
 ```
 
 ```shell
-yarn add --dev eslint eslint-plugin-react eslint-plugin-react-hooks
+yarn add --dev eslint-plugin-react eslint-plugin-react-hooks
 ```
 
 ```shell
-pnpm install --save-dev eslint eslint-plugin-react eslint-plugin-react-hooks
+pnpm add --save-dev eslint-plugin-react eslint-plugin-react-hooks
+```
+
+## Usage
+
+Import the preset in your `eslint.config.js` file and extend it:
+
+```js
+import * as base from '@masterworks/eslint-config-masterworks/base/index.js'
+import * as react from '@masterworks/eslint-config-masterworks/react/index.js'
+
+export default [
+  {
+    ignores: [
+      // Files to ignore globally.
+    ],
+  },
+  base.apply({
+    // ...
+  }),
+  react.apply({
+    // By default it includes all .jsx and .tsx files, buy you can customize it.
+    files: ['**/*.jsx', '**/*.tsx', '**/use*.js', '**/use*.ts'],
+    rules: {
+      // Here you can customize or disable rules.
+      'react/style-prop-object': [
+        'error',
+        {
+          allow: ['FormattedNumber'],
+        },
+      ],
+    },
+  }),
+]
+```
+
+## A note on PropTypes
+
+This preset does not include any rules for PropTypes as they have been deprecated and removed by the React Core Team.
+
+See: https://react.dev/blog/2024/04/25/react-19-upgrade-guide#removed-proptypes-and-defaultprops
+
+If you still use PropTypes, you could add the following rules to your project's ESLint configuration:
+
+```js
+// ...
+
+export default [
+  // ...
+  react.apply({
+    rules: {
+      'react/default-props-match-prop-types': 'warn',
+      'react/forbid-foreign-prop-types': 'warn',
+      'react/no-unused-prop-types': 'warn',
+      'react/prop-types': 'warn',
+    },
+  }),
+  // ...
+]
 ```
