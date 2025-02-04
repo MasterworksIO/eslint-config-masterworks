@@ -1,6 +1,6 @@
 {
   "name": "@masterworks/eslint-config-masterworks-typescript",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "ESLint config presets for Masterworks — Base for TypeScript",
   "main": "index.js",
   "type": "module",

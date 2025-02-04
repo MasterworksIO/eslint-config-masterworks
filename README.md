@@ -33,15 +33,15 @@ If you don't see any of those, or if you see more than one, consult with your te
 As a minimum, you are going to need to install `eslint-config-masterworks` and the following packages, all as dev-dependencies. Based on your project's package manager:
 
 ```shell
-$ npm install --save-dev @eslint/js eslint eslint-import-resolver-typescript eslint-plugin-import-x @masterworks/eslint-config-masterworks@github:MasterworksIO/eslint-config-masterworks#3.0.0
+$ npm install --save-dev @eslint/js eslint eslint-import-resolver-typescript eslint-plugin-import-x @masterworks/eslint-config-masterworks@github:MasterworksIO/eslint-config-masterworks#4.0.0
 ```
 
 ```shell
-$ yarn add --dev @eslint/js eslint eslint-import-resolver-typescript eslint-plugin-import-x @masterworks/eslint-config-masterworks@github:MasterworksIO/eslint-config-masterworks#3.0.0
+$ yarn add --dev @eslint/js eslint eslint-import-resolver-typescript eslint-plugin-import-x @masterworks/eslint-config-masterworks@github:MasterworksIO/eslint-config-masterworks#4.0.0
 ```
 
 ```shell
-$ pnpm add --save-dev @eslint/js eslint eslint-import-resolver-typescript eslint-plugin-import-x @masterworks/eslint-config-masterworks@github:MasterworksIO/eslint-config-masterworks#3.0.0
+$ pnpm add --save-dev @eslint/js eslint eslint-import-resolver-typescript eslint-plugin-import-x @masterworks/eslint-config-masterworks@github:MasterworksIO/eslint-config-masterworks#4.0.0
 ```
 
 Then create an `eslint.config.js` file if it doesn't exist already, and extend the [`base` preset](./base/):
@@ -126,7 +126,7 @@ When using `@masterworks/eslint-config-masterworks` presets, you should also use
   "name": "my-project",
   "prettier": "@masterworks/eslint-config-masterworks/prettier/prettier.js",
   "devDependencies": {
-    "@masterworks/eslint-config-masterworks": "github:MasterworksIO/eslint-config-masterworks#3.0.0"
+    "@masterworks/eslint-config-masterworks": "github:MasterworksIO/eslint-config-masterworks#4.0.0"
   }
 }
 ```
