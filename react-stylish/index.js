@@ -1,4 +1,7 @@
-module.exports = {
+export const apply = ({ files = ['**/*.jsx', '**/*.tsx'], ignores = [], rules = {} } = {}) => ({
+  name: '@masterworks/eslint-config-masterworks-react-stylish',
+  files,
+  ignores,
   rules: {
     'react/jsx-boolean-value': ['error', 'never'],
     'react/jsx-closing-bracket-location': 'error',
@@ -21,5 +24,6 @@ module.exports = {
         return: 'parens-new-line',
       },
     ],
+    ...rules,
   },
-}
+})
