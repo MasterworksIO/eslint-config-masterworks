@@ -41,8 +41,6 @@ export const apply = ({
     '@typescript-eslint/unified-signatures': 'error',
     // Disable cumbersome rules.
     '@typescript-eslint/no-unnecessary-type-parameters': 'off',
-    // Disable conflicting rules.
-    'import/consistent-type-specifier-style': 'off',
     ...rules,
   },
 })
