@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Increase ranges for compatible eslint plugins and node versions
+
 ## 4.0.0 - 2025-02-04
 
 - Upgrade to eslint v9 and update all dependencies
