@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+
+# 4.1.0 - 2024-06-12
+
 - Increase ranges for compatible eslint plugins and node versions
 - Re-enable consistent-type-specifier-style for stylish typescript preset
 
