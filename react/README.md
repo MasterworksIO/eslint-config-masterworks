@@ -1,21 +1,25 @@
 # @masterworks/eslint-config-masterworks/react
 
-React-specific rules, including rules of hooks.
+Core React-specific rules, including rules of hooks.
+
+This preset assumes a modern ESM + TypeScript React stack. It still includes `.jsx` by default for compatibility, but `.tsx` is the primary target.
+
+It stays framework-agnostic and does not assume React DOM, Web APIs, or React Server Components. Use [`@masterworks/eslint-config-masterworks/react-web`](../react-web/README.md) on top when linting web applications.
 
 ## Peer dependencies
 
 Make sure to install these peer-dependencies:
 
 ```shell
-npm install --save-dev eslint-plugin-react eslint-plugin-react-hooks
+npm install --save-dev @eslint-react/eslint-plugin
 ```
 
 ```shell
-yarn add --dev eslint-plugin-react eslint-plugin-react-hooks
+yarn add --dev @eslint-react/eslint-plugin
 ```
 
 ```shell
-pnpm add --save-dev eslint-plugin-react eslint-plugin-react-hooks
+pnpm add --save-dev @eslint-react/eslint-plugin
 ```
 
 ## Usage
@@ -32,46 +36,16 @@ export default [
       // Files to ignore globally.
     ],
   },
-  base.apply({
-    // ...
+  ...base.apply({
+    tsconfigRootDir: import.meta.dirname,
   }),
-  react.apply({
-    // By default it includes all .jsx and .tsx files, buy you can customize it.
+  ...react.apply({
+    // By default it includes all .jsx and .tsx files, but you can customize it.
     files: ['**/*.jsx', '**/*.tsx', '**/use*.js', '**/use*.ts'],
     rules: {
       // Here you can customize or disable rules.
-      'react/style-prop-object': [
-        'error',
-        {
-          allow: ['FormattedNumber'],
-        },
-      ],
+      '@eslint-react/no-unused-state': 'warn',
     },
   }),
-]
-```
-
-## A note on PropTypes
-
-This preset does not include any rules for PropTypes as they have been deprecated and removed by the React Core Team.
-
-See: https://react.dev/blog/2024/04/25/react-19-upgrade-guide#removed-proptypes-and-defaultprops
-
-If you still use PropTypes, you could add the following rules to your project's ESLint configuration:
-
-```js
-// ...
-
-export default [
-  // ...
-  react.apply({
-    rules: {
-      'react/default-props-match-prop-types': 'warn',
-      'react/forbid-foreign-prop-types': 'warn',
-      'react/no-unused-prop-types': 'warn',
-      'react/prop-types': 'warn',
-    },
-  }),
-  // ...
 ]
 ```

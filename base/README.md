@@ -1,21 +1,21 @@
 # @masterworks/eslint-config-masterworks/base
 
-You should always include it as the base for the other presets. It is basically the [`eslint:recommended` preset](https://eslint.org/docs/rules/) with some extra few rules enabled and support for linting ESM imports.
+You should always include it as the base for the other presets. It covers JavaScript and TypeScript by default, building on top of the [`eslint:recommended` preset](https://eslint.org/docs/rules/) with extra rules enabled and support for linting ESM imports.
 
 ## Peer dependencies
 
 Make sure to install these peer-dependencies:
 
 ```shell
-npm install --save-dev @eslint/js eslint eslint-import-resolver-typescript eslint-plugin-import-x
+npm install --save-dev @eslint/js eslint eslint-import-resolver-typescript eslint-plugin-import-x typescript typescript-eslint
 ```
 
 ```shell
-yarn add --dev @eslint/js eslint eslint-import-resolver-typescript eslint-plugin-import-x
+yarn add --dev @eslint/js eslint eslint-import-resolver-typescript eslint-plugin-import-x typescript typescript-eslint
 ```
 
 ```shell
-pnpm add --save-dev @eslint/js eslint eslint-import-resolver-typescript eslint-plugin-import-x
+pnpm add --save-dev @eslint/js eslint eslint-import-resolver-typescript eslint-plugin-import-x typescript typescript-eslint
 ```
 
 ## Usage
@@ -33,11 +33,10 @@ export default [
       // All other files you want to ignore.
     ],
   },
-  base.apply({
-    // You might not need to specify files to lint
-    // as it will pick up all JavaScript files by default.
-    // Example for a react project.
-    files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
+  ...base.apply({
+    // The base preset lints JavaScript and TypeScript by default.
+    // Point it at the project's tsconfig.json location.
+    tsconfigRootDir: import.meta.dirname,
     rules: {
       // Here you can customize or disable rules.
     },

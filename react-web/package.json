@@ -15,6 +15,7 @@
   },
   "homepage": "https://github.com/MasterworksIO/eslint-config-masterworks/tree/master/react-web",
   "peerDependencies": {
+    "@eslint-react/eslint-plugin": "3.0.0",
     "eslint-plugin-jsx-a11y": "^6.10.2"
   }
 }

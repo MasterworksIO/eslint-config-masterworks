@@ -13,5 +13,9 @@
   "bugs": {
     "url": "https://github.com/MasterworksIO/eslint-config-masterworks/issues"
   },
-  "homepage": "https://github.com/MasterworksIO/eslint-config-masterworks/tree/master/react-stylish"
+  "homepage": "https://github.com/MasterworksIO/eslint-config-masterworks/tree/master/react-stylish",
+  "peerDependencies": {
+    "@eslint-react/eslint-plugin": "3.0.0",
+    "@stylistic/eslint-plugin": "^5.9.0"
+  }
 }

@@ -1,11 +1,11 @@
 packages:
-  - 'base/'
-  - 'node/'
-  - 'prettier/'
-  - 'react/'
-  - 'react-web/'
-  - 'react-stylish/'
-  - 'stylish/'
-  - 'typescript/'
-  - 'typescript-strict/'
-  - 'typescript-stylish/'
+  - base/
+  - node/
+  - prettier/
+  - react/
+  - react-web/
+  - react-stylish/
+  - stylish/
+  - typescript-strict/
+
+linkWorkspacePackages: deep

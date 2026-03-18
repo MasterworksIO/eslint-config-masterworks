@@ -1,28 +1,28 @@
 # @masterworks/eslint-config-masterworks/react-web
 
-Adds JSX accessibility best-practices on top of the `react` preset. For use in web projects only, do NOT use in react-native or Expo projects.
+Adds React DOM, Web API, and JSX accessibility best practices on top of the `react` preset.
+
+Use in web projects only. Do NOT use in React Native or Expo projects.
 
 ## Peer dependencies
 
-Make sure to install these peer-dependencies:
+Install the peer dependencies for [`@masterworks/eslint-config-masterworks/react`](../react/README.md), plus `eslint-plugin-jsx-a11y`:
 
 ```shell
-npm install --save-dev eslint-plugin-jsx-a11y
+npm install --save-dev @eslint-react/eslint-plugin eslint-plugin-jsx-a11y
 ```
 
 ```shell
-yarn add --dev eslint-plugin-jsx-a11y
+yarn add --dev @eslint-react/eslint-plugin eslint-plugin-jsx-a11y
 ```
 
 ```shell
-pnpm add --save-dev eslint-plugin-jsx-a11y
+pnpm add --save-dev @eslint-react/eslint-plugin eslint-plugin-jsx-a11y
 ```
 
 ## Usage
 
-
 Make sure to have the base and react presets installed and configured in your `eslint.config.js` file before adding this one:
-
 
 ```js
 import * as base from '@masterworks/eslint-config-masterworks/base/index.js'
@@ -35,16 +35,16 @@ export default [
       // Files to ignore globally.
     ],
   },
-  base.apply({
-    // ...
+  ...base.apply({
+    tsconfigRootDir: import.meta.dirname,
   }),
-  react.apply({
+  ...react.apply({
     files: ['**/*.jsx', '**/*.tsx', '**/use*.js', '**/use*.ts'],
     rules: {
       // ...
     },
   }),
-  reactWeb.apply({
+  ...reactWeb.apply({
     // If you have customized the files for the react preset, you should do the same here.
     files: ['**/*.jsx', '**/*.tsx', '**/use*.js', '**/use*.ts'],
     rules: {

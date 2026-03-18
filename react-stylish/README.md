@@ -4,7 +4,19 @@ Opinionated, auto-fixable rules to add on top of [`@masterworks/eslint-config-ma
 
 ## Peer dependencies
 
-This preset itself doesn't need extra peer dependencies. Install those dictated by [`@masterworks/eslint-config-masterworks/react`](../react/README.md).
+Install the peer dependencies for [`@masterworks/eslint-config-masterworks/react`](../react/README.md), plus `@stylistic/eslint-plugin`:
+
+```shell
+npm install --save-dev @eslint-react/eslint-plugin @stylistic/eslint-plugin
+```
+
+```shell
+yarn add --dev @eslint-react/eslint-plugin @stylistic/eslint-plugin
+```
+
+```shell
+pnpm add --save-dev @eslint-react/eslint-plugin @stylistic/eslint-plugin
+```
 
 ## Usage
 
@@ -21,21 +33,21 @@ export default [
       // Files to ignore globally.
     ],
   },
-  base.apply({
-    // ...
+  ...base.apply({
+    tsconfigRootDir: import.meta.dirname,
   }),
-  react.apply({
+  ...react.apply({
     files: ['**/*.jsx', '**/*.tsx', '**/use*.js', '**/use*.ts'],
     rules: {
       // ...
     },
   }),
-  reactStylish.apply({
+  ...reactStylish.apply({
     // If you have customized the files for the react preset, you should do the same here.
     files: ['**/*.jsx', '**/*.tsx', '**/use*.js', '**/use*.ts'],
     rules: {
       // Here you can customize or disable rules.
-    }
+    },
   }),
 ]
 ```

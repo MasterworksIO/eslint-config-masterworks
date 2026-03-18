@@ -15,6 +15,6 @@
   },
   "homepage": "https://github.com/MasterworksIO/eslint-config-masterworks/tree/master/stylish",
   "peerDependencies": {
-    "@stylistic/eslint-plugin": "^3.0.1 || ^4.0.0 || ^5.0.0"
+    "@stylistic/eslint-plugin": "^5.9.0"
   }
 }

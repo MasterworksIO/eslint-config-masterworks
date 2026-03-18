@@ -2,6 +2,8 @@
 
 Opinionated, auto-fixable rules to add on top of [`@masterworks/eslint-config-masterworks/base`](../base/README.md).
 
+This preset now covers both JavaScript and TypeScript stylistic rules, including what used to live in the separate `typescript-stylish` preset.
+
 ## Peer dependencies
 
 Make sure to install these peer-dependencies:
@@ -20,7 +22,7 @@ pnpm add --save-dev @stylistic/eslint-plugin
 
 ## Usage
 
-Import the preset in your `eslint.config.js` file and extend it, after the `base` preset:
+Import the preset in your `eslint.config.js` file and extend it after the `base` preset:
 
 ```js
 import * as base from '@masterworks/eslint-config-masterworks/base/index.js'
@@ -32,13 +34,10 @@ export default [
       // Files to ignore globally.
     ],
   },
-  base.apply({
-    // ...
+  ...base.apply({
+    tsconfigRootDir: import.meta.dirname,
   }),
-  stylish.apply({
-    // By default it includes all JavaScript files, buy you can customize it.
-    // Here we include TypeScript and JSX files as well.
-    files: ['*.js', '*.jsx', '*.ts', '*.tsx'],
+  ...stylish.apply({
     rules: {
       // Here you can customize or disable rules.
     },

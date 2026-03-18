@@ -2,8 +2,6 @@
   "compilerOptions": {
     "allowJs": true,
     "checkJs": false,
-    "esModuleInterop": true,
-    "lib": ["ESNext"],
     "module": "NodeNext",
     "moduleDetection": "force",
     "moduleResolution": "NodeNext",
@@ -11,8 +9,7 @@
     "noImplicitOverride": true,
     "noUncheckedIndexedAccess": true,
     "skipLibCheck": true,
-    "strict": true,
-    "target": "ESNext",
+    "types": ["node"]
   },
-  "include": ["modules.d.ts", "*/index.js", "prettier/prettier.js", "eslint.config.js"],
+  "include": ["*/index.js", "prettier/prettier.js", "eslint.config.js"]
 }

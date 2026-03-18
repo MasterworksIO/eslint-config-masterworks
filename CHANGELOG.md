@@ -2,6 +2,43 @@
 
 ## Unreleased
 
+- Upgrade to ESLint 10, make TypeScript the default, and adopt ESLint React v3
+
+This major release requires Node.js `>=24` and flattens the presents by assuming TypeScript.
+
+### TypeScript by default
+
+The separate `typescript` and `typescript-stylish` presets have been removed.
+
+TypeScript support now lives in `base`, and the TypeScript stylistic rules now live in `stylish`. All our projects already use TypeScript and at this point in history we shouldn't be writing plain JavaScript anymore. The presents default to all JavaScript and TypeScript files but JavaScript is treated as a second class citizen from now on.
+
+### React presets
+
+The React presets now use `@eslint-react/eslint-plugin@3.0.0` instead of `eslint-plugin-react` and `eslint-plugin-react-hooks`.
+
+The split stays the same on purpose:
+
+- `react`: core React rules, including rules of hooks
+- `react-web`: React DOM, Web API, and accessibility rules on top of `react`
+- `react-stylish`: JSX stylistic rules
+
+Upgrading will most definitely report new errors and warnings in React codebases, since the rules now come from a different plugin with a different recommended set.
+
+### Flat config usage
+
+All `apply()` helpers now return arrays of flat config objects, so they should be used with spread syntax.
+
+```js
+export default [
+  ...base.apply({ tsconfigRootDir: import.meta.dirname }),
+  ...react.apply(),
+  ...reactWeb.apply(),
+]
+```
+
+### Runtime expectations
+
+This release now requires Node.js `>=24`.
 
 # 4.1.0 - 2024-06-12
 
@@ -70,7 +107,6 @@ Rules related to PropTypes have been removed, as they have been deprecated and r
 ### Improved detection of deprecated APIs
 
 Most presets have warnings for the usage of deprecated rules. With the different upgrades this detection has improved and you most probably will get new warnings.
-
 
 ## 3.0.0 - 2023-11-16
 
