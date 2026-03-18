@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+
+## 5.0.0 - 2026-03-18
+
 - Upgrade to ESLint 10, make TypeScript the default, and adopt ESLint React v3
 
 This major release requires Node.js `>=24` and flattens the presents by assuming TypeScript.
@@ -40,7 +43,7 @@ export default [
 
 This release now requires Node.js `>=24`.
 
-# 4.1.0 - 2024-06-12
+## 4.1.0 - 2024-06-12
 
 - Increase ranges for compatible eslint plugins and node versions
 - Re-enable consistent-type-specifier-style for stylish typescript preset

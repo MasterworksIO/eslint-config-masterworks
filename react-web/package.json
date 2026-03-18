@@ -1,6 +1,6 @@
 {
   "name": "@masterworks/eslint-config-masterworks-react-web",
-  "version": "4.1.0",
+  "version": "5.0.0",
   "description": "ESLint config presets for Masterworks — React on the Web",
   "main": "index.js",
   "type": "module",
