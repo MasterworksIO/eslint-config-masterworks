@@ -2,7 +2,28 @@
 
 ## Unreleased
 
+## 6.0.0 - 2026-04-14
+
 - Upgrade to ESLint React v4
+
+This is a major release because consumers must upgrade `@eslint-react/eslint-plugin` from v3 to v4.
+
+### Breaking changes
+
+The React presets now require `@eslint-react/eslint-plugin@4.2.3`.
+
+ESLint React v4 flattened rule prefixes from slash to dash (e.g. `@eslint-react/dom/no-missing-button-type` is now `@eslint-react/dom-no-missing-button-type`). If you reference any `@eslint-react/dom/`, `@eslint-react/web-api/`, or `@eslint-react/rsc/` rules in your project config, update them accordingly.
+
+### Removed rules
+
+The following stylistic rules were removed upstream with no replacement:
+
+- `@eslint-react/jsx-shorthand-boolean`
+- `@eslint-react/jsx-shorthand-fragment`
+
+### Version script fix
+
+The `version` lifecycle script now correctly propagates the version to all sub-packages.
 
 ## 5.0.0 - 2026-03-18
 

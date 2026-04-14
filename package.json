@@ -1,6 +1,6 @@
 {
   "name": "@masterworks/eslint-config-masterworks",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "description": "ESLint config presets for Masterworks",
   "engines": {
     "node": ">=24"
@@ -21,7 +21,7 @@
   "prettier": "./prettier/prettier.js",
   "scripts": {
     "lint": "eslint",
-    "version": "pnpm recursive exec -- npm version --no-git-tag-version"
+    "version": "pnpm recursive exec -- npm version $npm_package_version --no-git-tag-version"
   },
   "devDependencies": {
     "@types/node": "25.6.0",
