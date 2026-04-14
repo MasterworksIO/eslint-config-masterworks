@@ -27,7 +27,7 @@ export const apply = ({ files = ['**/*.jsx', '**/*.tsx'], ignores = [], rules = 
       ...DISABLE_RSC.rules,
       ...DISABLE_WEB_API.rules,
       '@eslint-react/exhaustive-deps': 'error',
-      '@eslint-react/no-children-prop': 'error',
+      '@eslint-react/jsx-no-children-prop': 'error',
       '@eslint-react/no-unused-state': 'error',
       ...rules,
     },

@@ -9,9 +9,7 @@ export const apply = ({ files = ['**/*.jsx', '**/*.tsx'], ignores = [], rules = 
       '@stylistic': stylistic,
     },
     rules: {
-      '@eslint-react/jsx-shorthand-boolean': 'error',
-      '@eslint-react/jsx-shorthand-fragment': 'error',
-      '@eslint-react/no-useless-fragment': 'error',
+      '@eslint-react/jsx-no-useless-fragment': 'error',
       '@stylistic/jsx-closing-bracket-location': 'error',
       '@stylistic/jsx-closing-tag-location': 'error',
       '@stylistic/jsx-curly-spacing': 'error',

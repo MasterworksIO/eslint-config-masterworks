@@ -20,8 +20,8 @@ export const apply = ({ files = ['**/*.jsx', '**/*.tsx'], ignores = [], rules = 
     rules: {
       ...DOM.rules,
       ...WEB_API.rules,
-      '@eslint-react/dom/no-missing-button-type': 'error',
-      '@eslint-react/dom/no-string-style-prop': 'error',
+      '@eslint-react/dom-no-missing-button-type': 'error',
+      '@eslint-react/dom-no-string-style-prop': 'error',
       ...jsxA11y.flatConfigs.recommended.rules,
       'jsx-a11y/alt-text': 'error',
       ...rules,

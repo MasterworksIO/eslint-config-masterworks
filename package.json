@@ -24,9 +24,9 @@
     "version": "pnpm recursive exec -- npm version --no-git-tag-version"
   },
   "devDependencies": {
-    "@types/node": "25.3.1",
-    "eslint": "10.0.2",
-    "prettier": "3.8.1",
-    "typescript": "6.0.1-rc"
+    "@types/node": "25.6.0",
+    "eslint": "10.2.0",
+    "prettier": "3.8.2",
+    "typescript": "6.0.2"
   }
 }
