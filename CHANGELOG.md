@@ -2,9 +2,28 @@
 
 ## Unreleased
 
+## 7.0.0 - 2026-05-01
+
 - Upgrade to ESLint React v5
 - Drop `@typescript-eslint/promise-function-async` from `typescript-strict`
 - Drop `prop: 'parens-new-line'` from `@stylistic/jsx-wrap-multilines` in `react-stylish`
+
+This is a major release because consumers must upgrade `@eslint-react/eslint-plugin` from v4 to v5.
+
+### Breaking changes
+
+The React presets now require `@eslint-react/eslint-plugin@5.6.6`.
+
+### Removed rules
+
+The following rules were removed upstream and dropped from the presets:
+
+- `@eslint-react/component-hook-factories` — removed in `@eslint-react/eslint-plugin@5.5.0` because the equivalent rule was removed from `eslint-plugin-react-hooks` upstream. If you reference this rule in your project config, delete it.
+- `@eslint-react/no-unused-state` — removed from the `react` preset. The rule was removed in `@eslint-react/eslint-plugin@5.0.0` and re-added in `5.6.6` as a no-op stub for a future function-component re-implementation. It currently does nothing, so the preset no longer enables it.
+
+### New rules
+
+ESLint React v5 ships several new rules that the `recommended-type-checked` preset enables, including `@eslint-react/use-state`, `@eslint-react/set-state-in-effect`, `@eslint-react/static-components`, `@eslint-react/jsx-no-leaked-dollar`, `@eslint-react/jsx-no-leaked-semicolon`, and `@eslint-react/web-api-no-leaked-fetch`. Expect new errors and warnings when upgrading. Downgrade individually in your project config as needed.
 
 ## 6.0.0 - 2026-04-14
 

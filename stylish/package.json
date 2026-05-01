@@ -1,6 +1,6 @@
 {
   "name": "@masterworks/eslint-config-masterworks-stylish",
-  "version": "6.0.0",
+  "version": "7.0.0",
   "description": "ESLint config presets for Masterworks — stylish preferences",
   "main": "index.js",
   "type": "module",

@@ -2,7 +2,7 @@
 
 [ESLint config presets](https://eslint.org/docs/user-guide/configuring/configuration-files#extending-configuration-files) for Masterworks.
 
-Version 6 requires Node.js `>=24`, is ESM-only, and assumes TypeScript by default.
+Version 7 requires Node.js `>=24`, is ESM-only, and assumes TypeScript by default.
 
 ## Why
 
@@ -35,15 +35,15 @@ If you don't see any of those, or if you see more than one, consult with your te
 As a minimum, you are going to need to install `@masterworks/eslint-config-masterworks` and the following packages, all as dev-dependencies. Based on your project's package manager:
 
 ```shell
-$ npm install --save-dev @eslint/js eslint eslint-import-resolver-typescript eslint-plugin-import-x typescript typescript-eslint @masterworks/eslint-config-masterworks@github:MasterworksIO/eslint-config-masterworks#6.0.0
+$ npm install --save-dev @eslint/js eslint eslint-import-resolver-typescript eslint-plugin-import-x typescript typescript-eslint @masterworks/eslint-config-masterworks@github:MasterworksIO/eslint-config-masterworks#7.0.0
 ```
 
 ```shell
-$ yarn add --dev @eslint/js eslint eslint-import-resolver-typescript eslint-plugin-import-x typescript typescript-eslint @masterworks/eslint-config-masterworks@github:MasterworksIO/eslint-config-masterworks#6.0.0
+$ yarn add --dev @eslint/js eslint eslint-import-resolver-typescript eslint-plugin-import-x typescript typescript-eslint @masterworks/eslint-config-masterworks@github:MasterworksIO/eslint-config-masterworks#7.0.0
 ```
 
 ```shell
-$ pnpm add --save-dev @eslint/js eslint eslint-import-resolver-typescript eslint-plugin-import-x typescript typescript-eslint @masterworks/eslint-config-masterworks@github:MasterworksIO/eslint-config-masterworks#6.0.0
+$ pnpm add --save-dev @eslint/js eslint eslint-import-resolver-typescript eslint-plugin-import-x typescript typescript-eslint @masterworks/eslint-config-masterworks@github:MasterworksIO/eslint-config-masterworks#7.0.0
 ```
 
 Then create an `eslint.config.js` file if it doesn't exist already, and extend the [`base` preset](./base/):
