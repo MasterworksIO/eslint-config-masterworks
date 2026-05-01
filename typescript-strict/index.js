@@ -36,7 +36,6 @@ export const apply = ({
       ],
       '@typescript-eslint/no-shadow': 'error',
       '@typescript-eslint/prefer-enum-initializers': 'error',
-      '@typescript-eslint/promise-function-async': 'error',
       '@typescript-eslint/switch-exhaustiveness-check': 'error',
       // Disable conflicting rules
       'no-shadow': 'off',
