@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Upgrade to ESLint React v5
+
 ## 6.0.0 - 2026-04-14
 
 - Upgrade to ESLint React v4
