@@ -4,6 +4,7 @@
 
 - Upgrade to ESLint React v5
 - Drop `@typescript-eslint/promise-function-async` from `typescript-strict`
+- Drop `prop: 'parens-new-line'` from `@stylistic/jsx-wrap-multilines` in `react-stylish`
 
 ## 6.0.0 - 2026-04-14
 

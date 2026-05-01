@@ -25,7 +25,6 @@ export const apply = ({ files = ['**/*.jsx', '**/*.tsx'], ignores = [], rules = 
           condition: 'parens-new-line',
           declaration: 'parens-new-line',
           logical: 'parens-new-line',
-          prop: 'parens-new-line',
           return: 'parens-new-line',
         },
       ],
