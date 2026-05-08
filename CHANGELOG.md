@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Upgrade `eslint-plugin-n` peer to v18 and enable `n/prefer-global/{crypto,timers}`
+- Re-enable `@eslint-react/no-unused-state` in the `react` preset
 
 ## 7.0.0 - 2026-05-01
 
