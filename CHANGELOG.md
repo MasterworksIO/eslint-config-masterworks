@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Upgrade `eslint-plugin-n` peer to v18 and enable `n/prefer-global/{crypto,timers}`
+
 ## 7.0.0 - 2026-05-01
 
 - Upgrade to ESLint React v5
