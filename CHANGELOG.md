@@ -2,9 +2,27 @@
 
 ## Unreleased
 
+## 8.0.0 - 2026-05-08
+
 - Upgrade `eslint-plugin-n` peer to v18 and enable `n/prefer-global/{crypto,timers}`
 - Re-enable `@eslint-react/no-unused-state` in the `react` preset
 - Drop `@eslint-react` plugin re-registration from `react-web` for ESLint 10.3.0 compatibility
+
+This is a major release because consumers must upgrade `eslint-plugin-n` from v17 to v18 and `@eslint-react/eslint-plugin` to `5.7.4`, and because re-enabling `@eslint-react/no-unused-state` will surface new errors.
+
+### Breaking changes
+
+The `node` preset now requires `eslint-plugin-n@^18.0.0`. v18 is ESM-only and requires Node.js `>=20` and ESLint `>=8.57.1`. `n/no-unpublished-bin` was removed from the upstream `flat/recommended` preset in v18; the `node` preset never referenced it explicitly, so consumers see no change unless their project config enables it.
+
+The `react` preset now requires `@eslint-react/eslint-plugin@5.7.4`.
+
+The `react-web` preset no longer re-registers the `@eslint-react` plugin; it relies on the `react` preset to register it. This is required by ESLint 10.3.0's stricter plugin-redefinition check. Consumers using `react-web` without `react` will see a "plugin not registered" error and should add the `react` preset to their config.
+
+### New rules
+
+- `n/prefer-global/crypto` — prefer the global `crypto` over `node:crypto`.
+- `n/prefer-global/timers` — prefer the global timer functions over `node:timers`.
+- `@eslint-react/no-unused-state` — flags state from `useState`/`useReducer` that is assigned but never read (or only read inside an effect's dependency array). The rule was added to the upstream `recommended-type-checked` preset in `5.7.0` and then removed again in `5.7.2` over false-positive reports; we re-enable it explicitly. Downgrade to `'warn'` or `'off'` in your project config if needed.
 
 ## 7.0.0 - 2026-05-01
 
