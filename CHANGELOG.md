@@ -4,6 +4,7 @@
 
 - Upgrade `eslint-plugin-n` peer to v18 and enable `n/prefer-global/{crypto,timers}`
 - Re-enable `@eslint-react/no-unused-state` in the `react` preset
+- Drop `@eslint-react` plugin re-registration from `react-web` for ESLint 10.3.0 compatibility
 
 ## 7.0.0 - 2026-05-01
 

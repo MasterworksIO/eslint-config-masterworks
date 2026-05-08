@@ -10,8 +10,10 @@ export const apply = ({ files = ['**/*.jsx', '**/*.tsx'], ignores = [], rules = 
     files,
     ignores,
     plugins: {
-      ...DOM.plugins,
-      ...WEB_API.plugins,
+      // @eslint-react is already registered by the `react` preset; ESLint
+      // 10.3.0 forbids re-registering plugins. We pull in only the rules
+      // here (DOM.rules, WEB_API.rules below) and rely on the `react`
+      // preset for plugin registration.
       ...jsxA11y.flatConfigs.recommended.plugins,
     },
     settings: {
